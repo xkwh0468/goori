@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# Discord Widget
+## Code Snippet
+    <script type="text/javascript" src="//cdn.jsdelivr.net/discord-widget/latest/discord-widget.min.js"></script>
+    <script type="text/javascript">
+        discordWidget.init({
+            serverId: '51143782082543616',
+            title: 'Discord Widget Title',
+            join: false,
+            alphabetical: false,
+            theme: 'dark',
+            hideChannels: ['Channel Name 1', 'Channel Name 2'],
+            showAllUsers: true,
+            allUsersDefaultState: true
+        });
+        discordWidget.render();
+    </script>
+    <div class="discord-widget"></div>
 
-You can use the [editor on GitHub](https://github.com/xkwh0468/web1/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Usage
+Paste the snippet above into your site, and change the `serverId` parameter.
+For more details, go [here](http://discord.deliriousdrunkards.com/).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Screenshot
+![](http://i.imgur.com/6zRoK2V.png)
 
-### Markdown
+## Changelog
+#### 1.1
+##### New Features
+* Added option to hide all channels and only show online users. (hideChannels: true)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+#### 1.0
+##### New Features
+* Added version info to the widget to make troubleshooting issues on user sites easier.
+* Started this changelog.
 
-# Header 1
-## Header 2
-### Header 3
+##### Bug Fixes
+* N/A
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xkwh0468/web1/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Help
+If you run into trouble, let me know [here](https://github.com/RestingCoder/discord-widget/issues).
